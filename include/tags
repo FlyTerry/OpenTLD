@@ -1,0 +1,301 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BoundingBox	TLD.h	/^  BoundingBox(){}$/;"	f	struct:BoundingBox	access:public	signature:()
+BoundingBox	TLD.h	/^  BoundingBox(cv::Rect r): cv::Rect(r){}$/;"	f	struct:BoundingBox	access:public	signature:(cv::Rect r)
+BoundingBox	TLD.h	/^struct BoundingBox : public cv::Rect {$/;"	s	inherits:cv::Rect
+BoundingBox::BoundingBox	TLD.h	/^  BoundingBox(){}$/;"	f	struct:BoundingBox	access:public	signature:()
+BoundingBox::BoundingBox	TLD.h	/^  BoundingBox(cv::Rect r): cv::Rect(r){}$/;"	f	struct:BoundingBox	access:public	signature:(cv::Rect r)
+BoundingBox::overlap	TLD.h	/^  float overlap;        \/\/Overlap with current Bounding Box$/;"	m	struct:BoundingBox	access:public
+BoundingBox::sidx	TLD.h	/^  int sidx;             \/\/scale index$/;"	m	struct:BoundingBox	access:public
+CComparator	TLD.h	/^  CComparator(const std::vector<float>& _conf):conf(_conf){}$/;"	f	struct:CComparator	access:public	signature:(const std::vector<float>& _conf)
+CComparator	TLD.h	/^struct CComparator{$/;"	s
+CComparator::CComparator	TLD.h	/^  CComparator(const std::vector<float>& _conf):conf(_conf){}$/;"	f	struct:CComparator	access:public	signature:(const std::vector<float>& _conf)
+CComparator::conf	TLD.h	/^  std::vector<float> conf;$/;"	m	struct:CComparator	access:public
+CComparator::operator ()	TLD.h	/^  bool operator()(int idx1,int idx2){$/;"	f	struct:CComparator	access:public	signature:(int idx1,int idx2)
+DetStruct	TLD.h	/^struct DetStruct {$/;"	s
+DetStruct::bb	TLD.h	/^    std::vector<int> bb;$/;"	m	struct:DetStruct	access:public
+DetStruct::conf1	TLD.h	/^    std::vector<float> conf1;$/;"	m	struct:DetStruct	access:public
+DetStruct::conf2	TLD.h	/^    std::vector<float> conf2;$/;"	m	struct:DetStruct	access:public
+DetStruct::isin	TLD.h	/^    std::vector<std::vector<int> > isin;$/;"	m	struct:DetStruct	access:public
+DetStruct::patch	TLD.h	/^    std::vector<cv::Mat> patch;$/;"	m	struct:DetStruct	access:public
+DetStruct::patt	TLD.h	/^    std::vector<std::vector<int> > patt;$/;"	m	struct:DetStruct	access:public
+FB_error	LKTracker.h	/^  std::vector<float> FB_error;\/\/求FB_error的结果与原始位置的距离  $/;"	m	class:LKTracker	access:private
+FB_status	LKTracker.h	/^  std::vector<uchar> FB_status;$/;"	m	class:LKTracker	access:private
+Feature	FerNNClassifier.h	/^          Feature() : x1(0), y1(0), x2(0), y2(0) {}$/;"	f	struct:FerNNClassifier::Feature	access:public	signature:()
+Feature	FerNNClassifier.h	/^          Feature(int _x1, int _y1, int _x2, int _y2)$/;"	f	struct:FerNNClassifier::Feature	access:public	signature:(int _x1, int _y1, int _x2, int _y2)
+Feature	FerNNClassifier.h	/^  struct Feature$/;"	s	class:FerNNClassifier	access:public
+FerNNClassifier	FerNNClassifier.h	/^class FerNNClassifier{$/;"	c
+FerNNClassifier::Feature	FerNNClassifier.h	/^  struct Feature$/;"	s	class:FerNNClassifier	access:public
+FerNNClassifier::Feature::Feature	FerNNClassifier.h	/^          Feature() : x1(0), y1(0), x2(0), y2(0) {}$/;"	f	struct:FerNNClassifier::Feature	access:public	signature:()
+FerNNClassifier::Feature::Feature	FerNNClassifier.h	/^          Feature(int _x1, int _y1, int _x2, int _y2)$/;"	f	struct:FerNNClassifier::Feature	access:public	signature:(int _x1, int _y1, int _x2, int _y2)
+FerNNClassifier::Feature::operator ()	FerNNClassifier.h	/^          bool operator ()(const cv::Mat& patch) const$/;"	f	struct:FerNNClassifier::Feature	access:public	signature:(const cv::Mat& patch) const
+FerNNClassifier::Feature::x1	FerNNClassifier.h	/^          uchar x1, y1, x2, y2;$/;"	m	struct:FerNNClassifier::Feature	access:public
+FerNNClassifier::Feature::x2	FerNNClassifier.h	/^          uchar x1, y1, x2, y2;$/;"	m	struct:FerNNClassifier::Feature	access:public
+FerNNClassifier::Feature::y1	FerNNClassifier.h	/^          uchar x1, y1, x2, y2;$/;"	m	struct:FerNNClassifier::Feature	access:public
+FerNNClassifier::Feature::y2	FerNNClassifier.h	/^          uchar x1, y1, x2, y2;$/;"	m	struct:FerNNClassifier::Feature	access:public
+FerNNClassifier::NNConf	FerNNClassifier.h	/^  void NNConf(const cv::Mat& example,std::vector<int>& isin,float& rsconf,float& csconf);$/;"	p	class:FerNNClassifier	access:public	signature:(const cv::Mat& example,std::vector<int>& isin,float& rsconf,float& csconf)
+FerNNClassifier::acum	FerNNClassifier.h	/^  int acum;$/;"	m	class:FerNNClassifier	access:private
+FerNNClassifier::evaluateTh	FerNNClassifier.h	/^  void evaluateTh(const std::vector<std::pair<std::vector<int>,int> >& nXT,const std::vector<cv::Mat>& nExT);$/;"	p	class:FerNNClassifier	access:public	signature:(const std::vector<std::pair<std::vector<int>,int> >& nXT,const std::vector<cv::Mat>& nExT)
+FerNNClassifier::features	FerNNClassifier.h	/^  std::vector<std::vector<Feature> > features; \/\/Ferns features (one std::vector for each scale)$/;"	m	class:FerNNClassifier	access:public
+FerNNClassifier::getFeatures	FerNNClassifier.h	/^  void getFeatures(const cv::Mat& image,const int& scale_idx,std::vector<int>& fern);$/;"	p	class:FerNNClassifier	access:public	signature:(const cv::Mat& image,const int& scale_idx,std::vector<int>& fern)
+FerNNClassifier::getFernTh	FerNNClassifier.h	/^  float getFernTh(){return thr_fern;}$/;"	f	class:FerNNClassifier	access:public	signature:()
+FerNNClassifier::getNNTh	FerNNClassifier.h	/^  float getNNTh(){return thr_nn;}$/;"	f	class:FerNNClassifier	access:public	signature:()
+FerNNClassifier::getNumStructs	FerNNClassifier.h	/^  int getNumStructs(){return nstructs;}$/;"	f	class:FerNNClassifier	access:public	signature:()
+FerNNClassifier::measure_forest	FerNNClassifier.h	/^  float measure_forest(std::vector<int> fern);$/;"	p	class:FerNNClassifier	access:public	signature:(std::vector<int> fern)
+FerNNClassifier::nCounter	FerNNClassifier.h	/^  std::vector< std::vector<int> > nCounter; \/\/negative counter$/;"	m	class:FerNNClassifier	access:public
+FerNNClassifier::nEx	FerNNClassifier.h	/^  std::vector<cv::Mat> nEx; \/\/NN negative examples$/;"	m	class:FerNNClassifier	access:public
+FerNNClassifier::ncc_thesame	FerNNClassifier.h	/^  float ncc_thesame;$/;"	m	class:FerNNClassifier	access:private
+FerNNClassifier::nstructs	FerNNClassifier.h	/^  int nstructs;$/;"	m	class:FerNNClassifier	access:private
+FerNNClassifier::pCounter	FerNNClassifier.h	/^  std::vector< std::vector<int> > pCounter; \/\/positive counter$/;"	m	class:FerNNClassifier	access:public
+FerNNClassifier::pEx	FerNNClassifier.h	/^  std::vector<cv::Mat> pEx; \/\/NN positive examples$/;"	m	class:FerNNClassifier	access:public
+FerNNClassifier::posteriors	FerNNClassifier.h	/^  std::vector< std::vector<float> > posteriors; \/\/Ferns posteriors$/;"	m	class:FerNNClassifier	access:public
+FerNNClassifier::prepare	FerNNClassifier.h	/^  void prepare(const std::vector<cv::Size>& scales);$/;"	p	class:FerNNClassifier	access:public	signature:(const std::vector<cv::Size>& scales)
+FerNNClassifier::read	FerNNClassifier.h	/^  void read(const cv::FileNode& file);$/;"	p	class:FerNNClassifier	access:public	signature:(const cv::FileNode& file)
+FerNNClassifier::show	FerNNClassifier.h	/^  void show();$/;"	p	class:FerNNClassifier	access:public	signature:()
+FerNNClassifier::structSize	FerNNClassifier.h	/^  int structSize;$/;"	m	class:FerNNClassifier	access:private
+FerNNClassifier::thrN	FerNNClassifier.h	/^  float thrN; \/\/Negative threshold$/;"	m	class:FerNNClassifier	access:public
+FerNNClassifier::thrP	FerNNClassifier.h	/^  float thrP;  \/\/Positive thershold$/;"	m	class:FerNNClassifier	access:public
+FerNNClassifier::thr_fern	FerNNClassifier.h	/^  float thr_fern;$/;"	m	class:FerNNClassifier	access:private
+FerNNClassifier::thr_nn	FerNNClassifier.h	/^  float thr_nn;$/;"	m	class:FerNNClassifier	access:private
+FerNNClassifier::thr_nn_valid	FerNNClassifier.h	/^  float thr_nn_valid;$/;"	m	class:FerNNClassifier	access:public
+FerNNClassifier::trainF	FerNNClassifier.h	/^  void trainF(const std::vector<std::pair<std::vector<int>,int> >& ferns,int resample);$/;"	p	class:FerNNClassifier	access:public	signature:(const std::vector<std::pair<std::vector<int>,int> >& ferns,int resample)
+FerNNClassifier::trainNN	FerNNClassifier.h	/^  void trainNN(const std::vector<cv::Mat>& nn_examples);$/;"	p	class:FerNNClassifier	access:public	signature:(const std::vector<cv::Mat>& nn_examples)
+FerNNClassifier::update	FerNNClassifier.h	/^  void update(const std::vector<int>& fern, int C, int N);$/;"	p	class:FerNNClassifier	access:public	signature:(const std::vector<int>& fern, int C, int N)
+FerNNClassifier::valid	FerNNClassifier.h	/^  float valid;$/;"	m	class:FerNNClassifier	access:private
+LKTracker	LKTracker.h	/^  LKTracker();$/;"	p	class:LKTracker	access:public	signature:()
+LKTracker	LKTracker.h	/^class LKTracker{$/;"	c
+LKTracker::FB_error	LKTracker.h	/^  std::vector<float> FB_error;\/\/求FB_error的结果与原始位置的距离  $/;"	m	class:LKTracker	access:private
+LKTracker::FB_status	LKTracker.h	/^  std::vector<uchar> FB_status;$/;"	m	class:LKTracker	access:private
+LKTracker::LKTracker	LKTracker.h	/^  LKTracker();$/;"	p	class:LKTracker	access:public	signature:()
+LKTracker::fbmed	LKTracker.h	/^  float fbmed;$/;"	m	class:LKTracker	access:private
+LKTracker::filterPts	LKTracker.h	/^  bool filterPts(std::vector<cv::Point2f>& points1,std::vector<cv::Point2f>& points2);$/;"	p	class:LKTracker	access:private	signature:(std::vector<cv::Point2f>& points1,std::vector<cv::Point2f>& points2)
+LKTracker::getFB	LKTracker.h	/^  float getFB(){return fbmed;}$/;"	f	class:LKTracker	access:public	signature:()
+LKTracker::lambda	LKTracker.h	/^  float lambda;\/\/阈值？$/;"	m	class:LKTracker	access:private
+LKTracker::level	LKTracker.h	/^  int level;\/\/金字塔的最大层数$/;"	m	class:LKTracker	access:private
+LKTracker::normCrossCorrelation	LKTracker.h	/^  void normCrossCorrelation(const cv::Mat& img1,const cv::Mat& img2, $/;"	p	class:LKTracker	access:private	signature:(const cv::Mat& img1,const cv::Mat& img2, std::vector<cv::Point2f>& points1, std::vector<cv::Point2f>& points2)
+LKTracker::pointsFB	LKTracker.h	/^  std::vector<cv::Point2f> pointsFB;$/;"	m	class:LKTracker	access:private
+LKTracker::similarity	LKTracker.h	/^  std::vector<float> similarity;\/\/相似度$/;"	m	class:LKTracker	access:private
+LKTracker::simmed	LKTracker.h	/^  float simmed;$/;"	m	class:LKTracker	access:private
+LKTracker::status	LKTracker.h	/^  std::vector<uchar> status;\/\/对应特征的光流被发现，status内均为1,否则为0$/;"	m	class:LKTracker	access:private
+LKTracker::term_criteria	LKTracker.h	/^  cv::TermCriteria term_criteria;$/;"	m	class:LKTracker	access:private
+LKTracker::trackf2f	LKTracker.h	/^  bool trackf2f(const cv::Mat& img1, const cv::Mat& img2,$/;"	p	class:LKTracker	access:public	signature:(const cv::Mat& img1, const cv::Mat& img2, std::vector<cv::Point2f> &points1, std::vector<cv::Point2f> &points2)
+LKTracker::window_size	LKTracker.h	/^  cv::Size window_size;\/\/每个金字塔层的搜索窗口尺寸$/;"	m	class:LKTracker	access:private
+NNConf	FerNNClassifier.h	/^  void NNConf(const cv::Mat& example,std::vector<int>& isin,float& rsconf,float& csconf);$/;"	p	class:FerNNClassifier	access:public	signature:(const cv::Mat& example,std::vector<int>& isin,float& rsconf,float& csconf)
+OComparator	TLD.h	/^  OComparator(const std::vector<BoundingBox>& _grid):grid(_grid){}$/;"	f	struct:OComparator	access:public	signature:(const std::vector<BoundingBox>& _grid)
+OComparator	TLD.h	/^struct OComparator{$/;"	s
+OComparator::OComparator	TLD.h	/^  OComparator(const std::vector<BoundingBox>& _grid):grid(_grid){}$/;"	f	struct:OComparator	access:public	signature:(const std::vector<BoundingBox>& _grid)
+OComparator::grid	TLD.h	/^  std::vector<BoundingBox> grid;$/;"	m	struct:OComparator	access:public
+OComparator::operator ()	TLD.h	/^  bool operator()(int idx1,int idx2){$/;"	f	struct:OComparator	access:public	signature:(int idx1,int idx2)
+TLD	TLD.h	/^  TLD();$/;"	p	class:TLD	access:public	signature:()
+TLD	TLD.h	/^  TLD(const cv::FileNode& file);$/;"	p	class:TLD	access:public	signature:(const cv::FileNode& file)
+TLD	TLD.h	/^class TLD{$/;"	c
+TLD::TLD	TLD.h	/^  TLD();$/;"	p	class:TLD	access:public	signature:()
+TLD::TLD	TLD.h	/^  TLD(const cv::FileNode& file);$/;"	p	class:TLD	access:public	signature:(const cv::FileNode& file)
+TLD::angle_init	TLD.h	/^  float angle_init;$/;"	m	class:TLD	access:private
+TLD::angle_update	TLD.h	/^  float angle_update;$/;"	m	class:TLD	access:private
+TLD::bad_boxes	TLD.h	/^  std::vector<int> bad_boxes; \/\/indexes of bboxes with overlap < 0.2$/;"	m	class:TLD	access:private
+TLD::bad_overlap	TLD.h	/^  float bad_overlap;$/;"	m	class:TLD	access:private
+TLD::bad_patches	TLD.h	/^  float bad_patches;$/;"	m	class:TLD	access:private
+TLD::bbComp	TLD.h	/^  bool bbComp(const BoundingBox& bb1,const BoundingBox& bb2);$/;"	p	class:TLD	access:public	signature:(const BoundingBox& bb1,const BoundingBox& bb2)
+TLD::bbOverlap	TLD.h	/^  float bbOverlap(const BoundingBox& box1,const BoundingBox& box2);$/;"	p	class:TLD	access:public	signature:(const BoundingBox& box1,const BoundingBox& box2)
+TLD::bbPoints	TLD.h	/^  void bbPoints(std::vector<cv::Point2f>& points, const BoundingBox& bb);$/;"	p	class:TLD	access:public	signature:(std::vector<cv::Point2f>& points, const BoundingBox& bb)
+TLD::bbPredict	TLD.h	/^  void bbPredict(const std::vector<cv::Point2f>& points1,const std::vector<cv::Point2f>& points2,$/;"	p	class:TLD	access:public	signature:(const std::vector<cv::Point2f>& points1,const std::vector<cv::Point2f>& points2, const BoundingBox& bb1,BoundingBox& bb2)
+TLD::bbhull	TLD.h	/^  BoundingBox bbhull; \/\/ hull of good_boxes$/;"	m	class:TLD	access:private
+TLD::bbox_step	TLD.h	/^  int bbox_step;$/;"	m	class:TLD	access:private
+TLD::best_box	TLD.h	/^  BoundingBox best_box; \/\/ maximum overlapping bbox$/;"	m	class:TLD	access:private
+TLD::buildGrid	TLD.h	/^  void buildGrid(const cv::Mat& img, const cv::Rect& box);$/;"	p	class:TLD	access:public	signature:(const cv::Mat& img, const cv::Rect& box)
+TLD::classifier	TLD.h	/^  FerNNClassifier classifier;$/;"	m	class:TLD	access:private
+TLD::clusterBB	TLD.h	/^  int clusterBB(const std::vector<BoundingBox>& dbb,std::vector<int>& indexes);$/;"	p	class:TLD	access:public	signature:(const std::vector<BoundingBox>& dbb,std::vector<int>& indexes)
+TLD::clusterConf	TLD.h	/^  void clusterConf(const std::vector<BoundingBox>& dbb,const std::vector<float>& dconf,std::vector<BoundingBox>& cbb,std::vector<float>& cconf);$/;"	p	class:TLD	access:public	signature:(const std::vector<BoundingBox>& dbb,const std::vector<float>& dconf,std::vector<BoundingBox>& cbb,std::vector<float>& cconf)
+TLD::dbb	TLD.h	/^  std::vector<BoundingBox> dbb;$/;"	m	class:TLD	access:private
+TLD::dconf	TLD.h	/^  std::vector<float> dconf;$/;"	m	class:TLD	access:private
+TLD::detect	TLD.h	/^  void detect(const cv::Mat& frame);$/;"	p	class:TLD	access:public	signature:(const cv::Mat& frame)
+TLD::detected	TLD.h	/^  bool detected;$/;"	m	class:TLD	access:private
+TLD::dt	TLD.h	/^  DetStruct dt;$/;"	m	class:TLD	access:private
+TLD::dvalid	TLD.h	/^  std::vector<bool> dvalid;$/;"	m	class:TLD	access:private
+TLD::evaluate	TLD.h	/^  void evaluate();$/;"	p	class:TLD	access:public	signature:()
+TLD::generateNegativeData	TLD.h	/^  void generateNegativeData(const cv::Mat& frame);$/;"	p	class:TLD	access:public	signature:(const cv::Mat& frame)
+TLD::generatePositiveData	TLD.h	/^  void generatePositiveData(const cv::Mat& frame, int num_warps);$/;"	p	class:TLD	access:public	signature:(const cv::Mat& frame, int num_warps)
+TLD::generator	TLD.h	/^  cv::PatchGenerator generator;$/;"	m	class:TLD	access:private
+TLD::getBBHull	TLD.h	/^  void getBBHull();$/;"	p	class:TLD	access:public	signature:()
+TLD::getOverlappingBoxes	TLD.h	/^  void getOverlappingBoxes(const cv::Rect& box1,int num_closest);$/;"	p	class:TLD	access:public	signature:(const cv::Rect& box1,int num_closest)
+TLD::getPattern	TLD.h	/^  void getPattern(const cv::Mat& img, cv::Mat& pattern,cv::Scalar& mean,cv::Scalar& stdev);$/;"	p	class:TLD	access:public	signature:(const cv::Mat& img, cv::Mat& pattern,cv::Scalar& mean,cv::Scalar& stdev)
+TLD::getVar	TLD.h	/^  double getVar(const BoundingBox& box,const cv::Mat& sum,const cv::Mat& sqsum);$/;"	p	class:TLD	access:public	signature:(const BoundingBox& box,const cv::Mat& sum,const cv::Mat& sqsum)
+TLD::good_boxes	TLD.h	/^  std::vector<int> good_boxes; \/\/indexes of bboxes with overlap > 0.6$/;"	m	class:TLD	access:private
+TLD::grid	TLD.h	/^  std::vector<BoundingBox> grid;$/;"	m	class:TLD	access:private
+TLD::iisqsum	TLD.h	/^  cv::Mat iisqsum;$/;"	m	class:TLD	access:private
+TLD::iisum	TLD.h	/^  cv::Mat iisum;$/;"	m	class:TLD	access:private
+TLD::init	TLD.h	/^  void init(const cv::Mat& frame1,const cv::Rect &box, FILE* bb_file);$/;"	p	class:TLD	access:public	signature:(const cv::Mat& frame1,const cv::Rect &box, FILE* bb_file)
+TLD::lastbox	TLD.h	/^  BoundingBox lastbox;$/;"	m	class:TLD	access:private
+TLD::lastconf	TLD.h	/^  float lastconf;$/;"	m	class:TLD	access:private
+TLD::lastvalid	TLD.h	/^  bool lastvalid;$/;"	m	class:TLD	access:private
+TLD::learn	TLD.h	/^  void learn(const cv::Mat& img);$/;"	p	class:TLD	access:public	signature:(const cv::Mat& img)
+TLD::min_win	TLD.h	/^  int min_win;$/;"	m	class:TLD	access:private
+TLD::nEx	TLD.h	/^  std::vector<cv::Mat> nEx; \/\/negative NN examples$/;"	m	class:TLD	access:private
+TLD::nExT	TLD.h	/^  std::vector<cv::Mat> nExT; \/\/negative NN examples to Test$/;"	m	class:TLD	access:private
+TLD::nX	TLD.h	/^  std::vector<std::pair<std::vector<int>,int> > nX; \/\/ negative ferns <features,labels=0>$/;"	m	class:TLD	access:private
+TLD::nXT	TLD.h	/^  std::vector<std::pair<std::vector<int>,int> > nXT; \/\/negative data to Test$/;"	m	class:TLD	access:private
+TLD::noise_init	TLD.h	/^  int noise_init;$/;"	m	class:TLD	access:private
+TLD::noise_update	TLD.h	/^  int noise_update;$/;"	m	class:TLD	access:private
+TLD::num_closest_init	TLD.h	/^  int num_closest_init;$/;"	m	class:TLD	access:private
+TLD::num_closest_update	TLD.h	/^  int num_closest_update;$/;"	m	class:TLD	access:private
+TLD::num_warps_init	TLD.h	/^  int num_warps_init;$/;"	m	class:TLD	access:private
+TLD::num_warps_update	TLD.h	/^  int num_warps_update;$/;"	m	class:TLD	access:private
+TLD::pEx	TLD.h	/^  cv::Mat pEx;  \/\/positive NN example$/;"	m	class:TLD	access:private
+TLD::pX	TLD.h	/^  std::vector<std::pair<std::vector<int>,int> > pX; \/\/positive ferns <features,labels=1>$/;"	m	class:TLD	access:private
+TLD::patch_size	TLD.h	/^  int patch_size;$/;"	m	class:TLD	access:private
+TLD::processFrame	TLD.h	/^  void processFrame(const cv::Mat& img1,const cv::Mat& img2,std::vector<cv::Point2f>& points1,std::vector<cv::Point2f>& points2,$/;"	p	class:TLD	access:public	signature:(const cv::Mat& img1,const cv::Mat& img2,std::vector<cv::Point2f>& points1,std::vector<cv::Point2f>& points2, BoundingBox& bbnext,bool& lastboxfound, bool tl,FILE* bb_file)
+TLD::read	TLD.h	/^  void read(const cv::FileNode& file);$/;"	p	class:TLD	access:public	signature:(const cv::FileNode& file)
+TLD::scale_init	TLD.h	/^  float scale_init;$/;"	m	class:TLD	access:private
+TLD::scale_update	TLD.h	/^  float scale_update;$/;"	m	class:TLD	access:private
+TLD::scales	TLD.h	/^  std::vector<cv::Size> scales;$/;"	m	class:TLD	access:private
+TLD::shift_init	TLD.h	/^  float shift_init;$/;"	m	class:TLD	access:private
+TLD::shift_update	TLD.h	/^  float shift_update;$/;"	m	class:TLD	access:private
+TLD::tbb	TLD.h	/^  BoundingBox tbb;$/;"	m	class:TLD	access:private
+TLD::tconf	TLD.h	/^  float tconf;$/;"	m	class:TLD	access:private
+TLD::tmp	TLD.h	/^  TempStruct tmp;$/;"	m	class:TLD	access:private
+TLD::track	TLD.h	/^  void track(const cv::Mat& img1, const cv::Mat& img2,std::vector<cv::Point2f>& points1,std::vector<cv::Point2f>& points2);$/;"	p	class:TLD	access:public	signature:(const cv::Mat& img1, const cv::Mat& img2,std::vector<cv::Point2f>& points1,std::vector<cv::Point2f>& points2)
+TLD::tracked	TLD.h	/^  bool tracked;$/;"	m	class:TLD	access:private
+TLD::tracker	TLD.h	/^  LKTracker tracker;$/;"	m	class:TLD	access:private
+TLD::tvalid	TLD.h	/^  bool tvalid;$/;"	m	class:TLD	access:private
+TLD::var	TLD.h	/^  float var;$/;"	m	class:TLD	access:private
+TempStruct	TLD.h	/^  struct TempStruct {$/;"	s
+TempStruct::conf	TLD.h	/^    std::vector<float> conf;$/;"	m	struct:TempStruct	access:public
+TempStruct::patt	TLD.h	/^    std::vector<std::vector<int> > patt;$/;"	m	struct:TempStruct	access:public
+acum	FerNNClassifier.h	/^  int acum;$/;"	m	class:FerNNClassifier	access:private
+angle_init	TLD.h	/^  float angle_init;$/;"	m	class:TLD	access:private
+angle_update	TLD.h	/^  float angle_update;$/;"	m	class:TLD	access:private
+bad_boxes	TLD.h	/^  std::vector<int> bad_boxes; \/\/indexes of bboxes with overlap < 0.2$/;"	m	class:TLD	access:private
+bad_overlap	TLD.h	/^  float bad_overlap;$/;"	m	class:TLD	access:private
+bad_patches	TLD.h	/^  float bad_patches;$/;"	m	class:TLD	access:private
+bb	TLD.h	/^    std::vector<int> bb;$/;"	m	struct:DetStruct	access:public
+bbComp	TLD.h	/^  bool bbComp(const BoundingBox& bb1,const BoundingBox& bb2);$/;"	p	class:TLD	access:public	signature:(const BoundingBox& bb1,const BoundingBox& bb2)
+bbOverlap	TLD.h	/^  float bbOverlap(const BoundingBox& box1,const BoundingBox& box2);$/;"	p	class:TLD	access:public	signature:(const BoundingBox& box1,const BoundingBox& box2)
+bbPoints	TLD.h	/^  void bbPoints(std::vector<cv::Point2f>& points, const BoundingBox& bb);$/;"	p	class:TLD	access:public	signature:(std::vector<cv::Point2f>& points, const BoundingBox& bb)
+bbPredict	TLD.h	/^  void bbPredict(const std::vector<cv::Point2f>& points1,const std::vector<cv::Point2f>& points2,$/;"	p	class:TLD	access:public	signature:(const std::vector<cv::Point2f>& points1,const std::vector<cv::Point2f>& points2, const BoundingBox& bb1,BoundingBox& bb2)
+bbhull	TLD.h	/^  BoundingBox bbhull; \/\/ hull of good_boxes$/;"	m	class:TLD	access:private
+bbox_step	TLD.h	/^  int bbox_step;$/;"	m	class:TLD	access:private
+best_box	TLD.h	/^  BoundingBox best_box; \/\/ maximum overlapping bbox$/;"	m	class:TLD	access:private
+buildGrid	TLD.h	/^  void buildGrid(const cv::Mat& img, const cv::Rect& box);$/;"	p	class:TLD	access:public	signature:(const cv::Mat& img, const cv::Rect& box)
+classifier	TLD.h	/^  FerNNClassifier classifier;$/;"	m	class:TLD	access:private
+clusterBB	TLD.h	/^  int clusterBB(const std::vector<BoundingBox>& dbb,std::vector<int>& indexes);$/;"	p	class:TLD	access:public	signature:(const std::vector<BoundingBox>& dbb,std::vector<int>& indexes)
+clusterConf	TLD.h	/^  void clusterConf(const std::vector<BoundingBox>& dbb,const std::vector<float>& dconf,std::vector<BoundingBox>& cbb,std::vector<float>& cconf);$/;"	p	class:TLD	access:public	signature:(const std::vector<BoundingBox>& dbb,const std::vector<float>& dconf,std::vector<BoundingBox>& cbb,std::vector<float>& cconf)
+conf	TLD.h	/^    std::vector<float> conf;$/;"	m	struct:TempStruct	access:public
+conf	TLD.h	/^  std::vector<float> conf;$/;"	m	struct:CComparator	access:public
+conf1	TLD.h	/^    std::vector<float> conf1;$/;"	m	struct:DetStruct	access:public
+conf2	TLD.h	/^    std::vector<float> conf2;$/;"	m	struct:DetStruct	access:public
+createMask	tld_utils.h	/^cv::Mat createMask(const cv::Mat& image, CvRect box);$/;"	p	signature:(const cv::Mat& image, CvRect box)
+dbb	TLD.h	/^  std::vector<BoundingBox> dbb;$/;"	m	class:TLD	access:private
+dconf	TLD.h	/^  std::vector<float> dconf;$/;"	m	class:TLD	access:private
+detect	TLD.h	/^  void detect(const cv::Mat& frame);$/;"	p	class:TLD	access:public	signature:(const cv::Mat& frame)
+detected	TLD.h	/^  bool detected;$/;"	m	class:TLD	access:private
+drawBox	tld_utils.h	/^void drawBox(cv::Mat& image, CvRect box, cv::Scalar color = cvScalarAll(255), int thick=1); $/;"	p	signature:(cv::Mat& image, CvRect box, cv::Scalar color = cvScalarAll(255), int thick=1)
+drawPoints	tld_utils.h	/^void drawPoints(cv::Mat& image, std::vector<cv::Point2f> points,cv::Scalar color=cv::Scalar::all(255));$/;"	p	signature:(cv::Mat& image, std::vector<cv::Point2f> points,cv::Scalar color=cv::Scalar::all(255))
+dt	TLD.h	/^  DetStruct dt;$/;"	m	class:TLD	access:private
+dvalid	TLD.h	/^  std::vector<bool> dvalid;$/;"	m	class:TLD	access:private
+evaluate	TLD.h	/^  void evaluate();$/;"	p	class:TLD	access:public	signature:()
+evaluateTh	FerNNClassifier.h	/^  void evaluateTh(const std::vector<std::pair<std::vector<int>,int> >& nXT,const std::vector<cv::Mat>& nExT);$/;"	p	class:FerNNClassifier	access:public	signature:(const std::vector<std::pair<std::vector<int>,int> >& nXT,const std::vector<cv::Mat>& nExT)
+fbmed	LKTracker.h	/^  float fbmed;$/;"	m	class:LKTracker	access:private
+features	FerNNClassifier.h	/^  std::vector<std::vector<Feature> > features; \/\/Ferns features (one std::vector for each scale)$/;"	m	class:FerNNClassifier	access:public
+filterPts	LKTracker.h	/^  bool filterPts(std::vector<cv::Point2f>& points1,std::vector<cv::Point2f>& points2);$/;"	p	class:LKTracker	access:private	signature:(std::vector<cv::Point2f>& points1,std::vector<cv::Point2f>& points2)
+generateNegativeData	TLD.h	/^  void generateNegativeData(const cv::Mat& frame);$/;"	p	class:TLD	access:public	signature:(const cv::Mat& frame)
+generatePositiveData	TLD.h	/^  void generatePositiveData(const cv::Mat& frame, int num_warps);$/;"	p	class:TLD	access:public	signature:(const cv::Mat& frame, int num_warps)
+generator	TLD.h	/^  cv::PatchGenerator generator;$/;"	m	class:TLD	access:private
+getBBHull	TLD.h	/^  void getBBHull();$/;"	p	class:TLD	access:public	signature:()
+getFB	LKTracker.h	/^  float getFB(){return fbmed;}$/;"	f	class:LKTracker	access:public	signature:()
+getFeatures	FerNNClassifier.h	/^  void getFeatures(const cv::Mat& image,const int& scale_idx,std::vector<int>& fern);$/;"	p	class:FerNNClassifier	access:public	signature:(const cv::Mat& image,const int& scale_idx,std::vector<int>& fern)
+getFernTh	FerNNClassifier.h	/^  float getFernTh(){return thr_fern;}$/;"	f	class:FerNNClassifier	access:public	signature:()
+getNNTh	FerNNClassifier.h	/^  float getNNTh(){return thr_nn;}$/;"	f	class:FerNNClassifier	access:public	signature:()
+getNumStructs	FerNNClassifier.h	/^  int getNumStructs(){return nstructs;}$/;"	f	class:FerNNClassifier	access:public	signature:()
+getOverlappingBoxes	TLD.h	/^  void getOverlappingBoxes(const cv::Rect& box1,int num_closest);$/;"	p	class:TLD	access:public	signature:(const cv::Rect& box1,int num_closest)
+getPattern	TLD.h	/^  void getPattern(const cv::Mat& img, cv::Mat& pattern,cv::Scalar& mean,cv::Scalar& stdev);$/;"	p	class:TLD	access:public	signature:(const cv::Mat& img, cv::Mat& pattern,cv::Scalar& mean,cv::Scalar& stdev)
+getVar	TLD.h	/^  double getVar(const BoundingBox& box,const cv::Mat& sum,const cv::Mat& sqsum);$/;"	p	class:TLD	access:public	signature:(const BoundingBox& box,const cv::Mat& sum,const cv::Mat& sqsum)
+good_boxes	TLD.h	/^  std::vector<int> good_boxes; \/\/indexes of bboxes with overlap > 0.6$/;"	m	class:TLD	access:private
+grid	TLD.h	/^  std::vector<BoundingBox> grid;$/;"	m	class:TLD	access:private
+grid	TLD.h	/^  std::vector<BoundingBox> grid;$/;"	m	struct:OComparator	access:public
+iisqsum	TLD.h	/^  cv::Mat iisqsum;$/;"	m	class:TLD	access:private
+iisum	TLD.h	/^  cv::Mat iisum;$/;"	m	class:TLD	access:private
+index_shuffle	tld_utils.h	/^std::vector<int> index_shuffle(int begin,int end);$/;"	p	signature:(int begin,int end)
+init	TLD.h	/^  void init(const cv::Mat& frame1,const cv::Rect &box, FILE* bb_file);$/;"	p	class:TLD	access:public	signature:(const cv::Mat& frame1,const cv::Rect &box, FILE* bb_file)
+isin	TLD.h	/^    std::vector<std::vector<int> > isin;$/;"	m	struct:DetStruct	access:public
+lambda	LKTracker.h	/^  float lambda;\/\/阈值？$/;"	m	class:LKTracker	access:private
+lastbox	TLD.h	/^  BoundingBox lastbox;$/;"	m	class:TLD	access:private
+lastconf	TLD.h	/^  float lastconf;$/;"	m	class:TLD	access:private
+lastvalid	TLD.h	/^  bool lastvalid;$/;"	m	class:TLD	access:private
+learn	TLD.h	/^  void learn(const cv::Mat& img);$/;"	p	class:TLD	access:public	signature:(const cv::Mat& img)
+level	LKTracker.h	/^  int level;\/\/金字塔的最大层数$/;"	m	class:LKTracker	access:private
+measure_forest	FerNNClassifier.h	/^  float measure_forest(std::vector<int> fern);$/;"	p	class:FerNNClassifier	access:public	signature:(std::vector<int> fern)
+median	tld_utils.h	/^float median(std::vector<float> v);$/;"	p	signature:(std::vector<float> v)
+min_win	TLD.h	/^  int min_win;$/;"	m	class:TLD	access:private
+nCounter	FerNNClassifier.h	/^  std::vector< std::vector<int> > nCounter; \/\/negative counter$/;"	m	class:FerNNClassifier	access:public
+nEx	FerNNClassifier.h	/^  std::vector<cv::Mat> nEx; \/\/NN negative examples$/;"	m	class:FerNNClassifier	access:public
+nEx	TLD.h	/^  std::vector<cv::Mat> nEx; \/\/negative NN examples$/;"	m	class:TLD	access:private
+nExT	TLD.h	/^  std::vector<cv::Mat> nExT; \/\/negative NN examples to Test$/;"	m	class:TLD	access:private
+nX	TLD.h	/^  std::vector<std::pair<std::vector<int>,int> > nX; \/\/ negative ferns <features,labels=0>$/;"	m	class:TLD	access:private
+nXT	TLD.h	/^  std::vector<std::pair<std::vector<int>,int> > nXT; \/\/negative data to Test$/;"	m	class:TLD	access:private
+ncc_thesame	FerNNClassifier.h	/^  float ncc_thesame;$/;"	m	class:FerNNClassifier	access:private
+noise_init	TLD.h	/^  int noise_init;$/;"	m	class:TLD	access:private
+noise_update	TLD.h	/^  int noise_update;$/;"	m	class:TLD	access:private
+normCrossCorrelation	LKTracker.h	/^  void normCrossCorrelation(const cv::Mat& img1,const cv::Mat& img2, $/;"	p	class:LKTracker	access:private	signature:(const cv::Mat& img1,const cv::Mat& img2, std::vector<cv::Point2f>& points1, std::vector<cv::Point2f>& points2)
+nstructs	FerNNClassifier.h	/^  int nstructs;$/;"	m	class:FerNNClassifier	access:private
+num_closest_init	TLD.h	/^  int num_closest_init;$/;"	m	class:TLD	access:private
+num_closest_update	TLD.h	/^  int num_closest_update;$/;"	m	class:TLD	access:private
+num_warps_init	TLD.h	/^  int num_warps_init;$/;"	m	class:TLD	access:private
+num_warps_update	TLD.h	/^  int num_warps_update;$/;"	m	class:TLD	access:private
+operator ()	FerNNClassifier.h	/^          bool operator ()(const cv::Mat& patch) const$/;"	f	struct:FerNNClassifier::Feature	access:public	signature:(const cv::Mat& patch) const
+operator ()	TLD.h	/^  bool operator()(int idx1,int idx2){$/;"	f	struct:CComparator	access:public	signature:(int idx1,int idx2)
+operator ()	TLD.h	/^  bool operator()(int idx1,int idx2){$/;"	f	struct:OComparator	access:public	signature:(int idx1,int idx2)
+overlap	TLD.h	/^  float overlap;        \/\/Overlap with current Bounding Box$/;"	m	struct:BoundingBox	access:public
+pCounter	FerNNClassifier.h	/^  std::vector< std::vector<int> > pCounter; \/\/positive counter$/;"	m	class:FerNNClassifier	access:public
+pEx	FerNNClassifier.h	/^  std::vector<cv::Mat> pEx; \/\/NN positive examples$/;"	m	class:FerNNClassifier	access:public
+pEx	TLD.h	/^  cv::Mat pEx;  \/\/positive NN example$/;"	m	class:TLD	access:private
+pX	TLD.h	/^  std::vector<std::pair<std::vector<int>,int> > pX; \/\/positive ferns <features,labels=1>$/;"	m	class:TLD	access:private
+patch	TLD.h	/^    std::vector<cv::Mat> patch;$/;"	m	struct:DetStruct	access:public
+patch_size	TLD.h	/^  int patch_size;$/;"	m	class:TLD	access:private
+patt	TLD.h	/^    std::vector<std::vector<int> > patt;$/;"	m	struct:DetStruct	access:public
+patt	TLD.h	/^    std::vector<std::vector<int> > patt;$/;"	m	struct:TempStruct	access:public
+pointsFB	LKTracker.h	/^  std::vector<cv::Point2f> pointsFB;$/;"	m	class:LKTracker	access:private
+posteriors	FerNNClassifier.h	/^  std::vector< std::vector<float> > posteriors; \/\/Ferns posteriors$/;"	m	class:FerNNClassifier	access:public
+prepare	FerNNClassifier.h	/^  void prepare(const std::vector<cv::Size>& scales);$/;"	p	class:FerNNClassifier	access:public	signature:(const std::vector<cv::Size>& scales)
+processFrame	TLD.h	/^  void processFrame(const cv::Mat& img1,const cv::Mat& img2,std::vector<cv::Point2f>& points1,std::vector<cv::Point2f>& points2,$/;"	p	class:TLD	access:public	signature:(const cv::Mat& img1,const cv::Mat& img2,std::vector<cv::Point2f>& points1,std::vector<cv::Point2f>& points2, BoundingBox& bbnext,bool& lastboxfound, bool tl,FILE* bb_file)
+read	FerNNClassifier.h	/^  void read(const cv::FileNode& file);$/;"	p	class:FerNNClassifier	access:public	signature:(const cv::FileNode& file)
+read	TLD.h	/^  void read(const cv::FileNode& file);$/;"	p	class:TLD	access:public	signature:(const cv::FileNode& file)
+scale_init	TLD.h	/^  float scale_init;$/;"	m	class:TLD	access:private
+scale_update	TLD.h	/^  float scale_update;$/;"	m	class:TLD	access:private
+scales	TLD.h	/^  std::vector<cv::Size> scales;$/;"	m	class:TLD	access:private
+shift_init	TLD.h	/^  float shift_init;$/;"	m	class:TLD	access:private
+shift_update	TLD.h	/^  float shift_update;$/;"	m	class:TLD	access:private
+show	FerNNClassifier.h	/^  void show();$/;"	p	class:FerNNClassifier	access:public	signature:()
+sidx	TLD.h	/^  int sidx;             \/\/scale index$/;"	m	struct:BoundingBox	access:public
+similarity	LKTracker.h	/^  std::vector<float> similarity;\/\/相似度$/;"	m	class:LKTracker	access:private
+simmed	LKTracker.h	/^  float simmed;$/;"	m	class:LKTracker	access:private
+status	LKTracker.h	/^  std::vector<uchar> status;\/\/对应特征的光流被发现，status内均为1,否则为0$/;"	m	class:LKTracker	access:private
+structSize	FerNNClassifier.h	/^  int structSize;$/;"	m	class:FerNNClassifier	access:private
+tbb	TLD.h	/^  BoundingBox tbb;$/;"	m	class:TLD	access:private
+tconf	TLD.h	/^  float tconf;$/;"	m	class:TLD	access:private
+term_criteria	LKTracker.h	/^  cv::TermCriteria term_criteria;$/;"	m	class:LKTracker	access:private
+thrN	FerNNClassifier.h	/^  float thrN; \/\/Negative threshold$/;"	m	class:FerNNClassifier	access:public
+thrP	FerNNClassifier.h	/^  float thrP;  \/\/Positive thershold$/;"	m	class:FerNNClassifier	access:public
+thr_fern	FerNNClassifier.h	/^  float thr_fern;$/;"	m	class:FerNNClassifier	access:private
+thr_nn	FerNNClassifier.h	/^  float thr_nn;$/;"	m	class:FerNNClassifier	access:private
+thr_nn_valid	FerNNClassifier.h	/^  float thr_nn_valid;$/;"	m	class:FerNNClassifier	access:public
+tmp	TLD.h	/^  TempStruct tmp;$/;"	m	class:TLD	access:private
+track	TLD.h	/^  void track(const cv::Mat& img1, const cv::Mat& img2,std::vector<cv::Point2f>& points1,std::vector<cv::Point2f>& points2);$/;"	p	class:TLD	access:public	signature:(const cv::Mat& img1, const cv::Mat& img2,std::vector<cv::Point2f>& points1,std::vector<cv::Point2f>& points2)
+tracked	TLD.h	/^  bool tracked;$/;"	m	class:TLD	access:private
+tracker	TLD.h	/^  LKTracker tracker;$/;"	m	class:TLD	access:private
+trackf2f	LKTracker.h	/^  bool trackf2f(const cv::Mat& img1, const cv::Mat& img2,$/;"	p	class:LKTracker	access:public	signature:(const cv::Mat& img1, const cv::Mat& img2, std::vector<cv::Point2f> &points1, std::vector<cv::Point2f> &points2)
+trainF	FerNNClassifier.h	/^  void trainF(const std::vector<std::pair<std::vector<int>,int> >& ferns,int resample);$/;"	p	class:FerNNClassifier	access:public	signature:(const std::vector<std::pair<std::vector<int>,int> >& ferns,int resample)
+trainNN	FerNNClassifier.h	/^  void trainNN(const std::vector<cv::Mat>& nn_examples);$/;"	p	class:FerNNClassifier	access:public	signature:(const std::vector<cv::Mat>& nn_examples)
+tvalid	TLD.h	/^  bool tvalid;$/;"	m	class:TLD	access:private
+update	FerNNClassifier.h	/^  void update(const std::vector<int>& fern, int C, int N);$/;"	p	class:FerNNClassifier	access:public	signature:(const std::vector<int>& fern, int C, int N)
+valid	FerNNClassifier.h	/^  float valid;$/;"	m	class:FerNNClassifier	access:private
+var	TLD.h	/^  float var;$/;"	m	class:TLD	access:private
+window_size	LKTracker.h	/^  cv::Size window_size;\/\/每个金字塔层的搜索窗口尺寸$/;"	m	class:LKTracker	access:private
+x1	FerNNClassifier.h	/^          uchar x1, y1, x2, y2;$/;"	m	struct:FerNNClassifier::Feature	access:public
+x2	FerNNClassifier.h	/^          uchar x1, y1, x2, y2;$/;"	m	struct:FerNNClassifier::Feature	access:public
+y1	FerNNClassifier.h	/^          uchar x1, y1, x2, y2;$/;"	m	struct:FerNNClassifier::Feature	access:public
+y2	FerNNClassifier.h	/^          uchar x1, y1, x2, y2;$/;"	m	struct:FerNNClassifier::Feature	access:public
